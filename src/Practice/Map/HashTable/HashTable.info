@@ -1,0 +1,7 @@
+1. HashTable Implement Map interface , it is thread safe it uses multithreading.
+    It is synchronized.
+2. So it is slower in nature due to overhead.
+3. It is no longer used now it is being replaces with concurrentHashMap.
+4. Neither key nor value could be null
+5. Operation is same as hashMap
+6. It doesn't uses only linked List in case of collision (no red black is used).

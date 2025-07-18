@@ -1,0 +1,14 @@
+It is the subclass of hashMap means it extends hashmap, there is some difference it both of them
+    a. LinkedHashMap uses doubly linked list so the order is being maintained
+    b. We can pass initial capacity ,loadFactor,accessOrder.
+    c. AccessOrder : If its true then access element will go to last of the list due to tracking of least used
+                     element for deletion.
+
+We can use HashMap's value to implement LinkedHashMap
+
+Neither HashMap nor LinkedHashMap is thread safe.
+
+Whenever we put values then removeEldestEntry is called automatically for deleting not used item at very top.
+    By default this method return false so we need to override to use in our implementation.
+
+

@@ -1,0 +1,21 @@
+1.Comparable is  used for natural order sorting but when we required to custom logic for sorting such as
+    sort is by name , by age then check something and then sort by id etc.
+    But when we have compare with any of the field/variable inside the class so we write Comparable
+
+2.There is a compareTo method inside Comparable Interface when class need to sort by natural order
+    then we need to override that abstract method inside interface.
+
+3.It takes int value as a return type if the return value is -1 then arrange in same order/ascending if return
+    value is 0 then keep it as it is.
+
+4.If the value is 1 then arrange it into descending order
+
+5.We just need to call list.sort() , it will automatically find compareTo method and get return type then sort it.
+
+6.But when we use comparator we need to pass comparator in the argument of list.sort(), if there is any integer , float
+    or any wrapper class we can pass null as argument, and it will sort it into natural order.
+
+7.In list.sort(null) if there is any comparable is being inherited on that condition compareTo method will run
+    behind the seen for sorting. But if there is no comparable then it requires comparator there.
+    In comparable we can pass null for natural ordering but with comparator it is only possible when we haven't custom
+    class or it works only on wrapper classes not with custom class.
